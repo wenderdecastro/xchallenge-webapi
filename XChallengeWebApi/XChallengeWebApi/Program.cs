@@ -66,7 +66,7 @@ builder.Services.AddSwaggerGen(options =>
         Contact = new OpenApiContact
         {
             Name = "Senai Informática",
-            Url = new Uri("https://github.com/senai-desenvolvimento")
+            Url = new Uri("https://github.com/wenderdecastro/XChallenge")
         }
     });
 

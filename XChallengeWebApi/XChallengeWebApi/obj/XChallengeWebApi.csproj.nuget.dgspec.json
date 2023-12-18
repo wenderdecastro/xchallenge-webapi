@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\50579698890\\Desktop\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj": {}
+    "C:\\Users\\50579698890\\Desktop\\XChallenge\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\50579698890\\Desktop\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj": {
+    "C:\\Users\\50579698890\\Desktop\\XChallenge\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\50579698890\\Desktop\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj",
+        "projectUniqueName": "C:\\Users\\50579698890\\Desktop\\XChallenge\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj",
         "projectName": "XChallengeWebApi",
-        "projectPath": "C:\\Users\\50579698890\\Desktop\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj",
+        "projectPath": "C:\\Users\\50579698890\\Desktop\\XChallenge\\XChallengeWebApi\\XChallengeWebApi\\XChallengeWebApi.csproj",
         "packagesPath": "C:\\Users\\50579698890\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\50579698890\\Desktop\\XChallengeWebApi\\XChallengeWebApi\\obj\\",
+        "outputPath": "C:\\Users\\50579698890\\Desktop\\XChallenge\\XChallengeWebApi\\XChallengeWebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\50579698890\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,6 +58,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
