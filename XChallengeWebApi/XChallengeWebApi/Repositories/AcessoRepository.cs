@@ -43,7 +43,25 @@ namespace XChallengeWebApi.Repositories
 
         public Acesso Login(string email, string senha)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Acesso usuarioBuscado = _context.Acessos
+                    .Select(z => new Acesso
+                    {
+                        IdAcesso = z.IdAcesso,
+                        Nome = z.Nome,
+                        SenhaAcesso = z.SenhaAcesso,
+                        Email = z.Email
+                    }).FirstOrDefault(z => z.Email == email)!;
+
+                return usuarioBuscado;
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         List<Acesso> IAcessoRepository.Listar()

@@ -9,5 +9,5 @@ public partial class Estado
 
     public string? Estado1 { get; set; }
 
-    public virtual ICollection<Competidor> Competidors { get; } = new List<Competidor>();
+    public virtual ICollection<Competidor> Competidores { get; } = new List<Competidor>();
 }

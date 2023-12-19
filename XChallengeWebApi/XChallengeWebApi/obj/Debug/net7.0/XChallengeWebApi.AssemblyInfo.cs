@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XChallengeWebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c707799ab3a830bf90dd6b2746ce95980d385fde")]
 [assembly: System.Reflection.AssemblyProductAttribute("XChallengeWebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XChallengeWebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

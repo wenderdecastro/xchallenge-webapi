@@ -37,16 +37,16 @@ builder.Services.AddAuthentication(options =>
         ValidateLifetime = true,
 
         //forma de criptografia e valida a chave de autenticação
-        //IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("")),
+        IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("xchallenge-chavedeautenticacao-worldskills")),
 
         //valida o tempo de expiração do token
         ClockSkew = TimeSpan.FromMinutes(5),
 
         //nome do issuer (de onde está vindo)
-        //ValidIssuer = "",
+        ValidIssuer = "XChallengeWebApi",
 
         //nome do audience (para onde está indo)
-        //ValidAudience = ""
+        ValidAudience = "XChallengeWebApi"
     };
 });
 

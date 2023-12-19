@@ -91,11 +91,11 @@ public partial class XChallengeContext : DbContext
                 .HasMaxLength(255)
                 .IsUnicode(false);
 
-            entity.HasOne(d => d.EstadoNavigation).WithMany(p => p.Competidors)
+            entity.HasOne(d => d.EstadoNavigation).WithMany(p => p.Competidores)
                 .HasForeignKey(d => d.Estado)
                 .HasConstraintName("FK_Competidor_Estados");
 
-            entity.HasOne(d => d.IdModalidadeNavigation).WithMany(p => p.Competidors)
+            entity.HasOne(d => d.IdModalidadeNavigation).WithMany(p => p.Competidores)
                 .HasForeignKey(d => d.IdModalidade)
                 .HasConstraintName("FK_Competidor_Modalidade");
         });
@@ -123,7 +123,7 @@ public partial class XChallengeContext : DbContext
                 .HasColumnType("smalldatetime")
                 .HasColumnName("terminoCompeticao");
 
-            entity.HasOne(d => d.IdModalidadeNavigation).WithMany(p => p.DataNacionals)
+            entity.HasOne(d => d.IdModalidadeNavigation).WithMany(p => p.DataNacionais)
                 .HasForeignKey(d => d.IdModalidade)
                 .HasConstraintName("FK_DataNacional_Modalidade");
         });
