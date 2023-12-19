@@ -17,6 +17,8 @@ namespace XChallengeWebApi.Controllers
 
     public class AcessoController : ControllerBase
     {
+        AcessoRepository acesso = new AcessoRepository();
+
         private readonly IAcessoRepository _acessoRepository;
 
         public AcessoController()
@@ -25,29 +27,29 @@ namespace XChallengeWebApi.Controllers
         }
 
 
-        [HttpPost]
-        public IActionResult Login(LoginViewModel usuario)
-        {
-            try
-            {
-                Acesso tentativaAcesso = _acessoRepository.Login(usuario.Email, usuario.Senha);
-                if (tentativaAcesso == null)
-                {
-                    return Ok(null);
-                }
-                var claims = new[]
-                {
-                    new Claim(JwtRegisteredClaimNames.Jti, tentativaAcesso.IdAcesso.ToString()),
-                    new Claim(jwtRegisteredClaimNames)
-                }
+        //[HttpPost]
+        //public IActionResult Login(LoginViewModel usuario)
+        //{
+        //    try
+        //    {
+        //        Acesso tentativaAcesso = _acessoRepository.Login(usuario.Email, usuario.Senha);
+        //        if (tentativaAcesso == null)
+        //        {
+        //            return Ok(null);
+        //        }
+        //        var claims = new[]
+        //        {
+        //            //new Claim(JwtRegisteredClaimNames.Jti, tentativaAcesso.IdAcesso.ToString()),
+        //            //new Claim(jwtRegisteredClaimNames)
+        //        }
 
-                return Ok();
+        //        return Ok();
 
-            }
-            catch (Exception error) {
-                return BadRequest(error); ;
-            }
-        }
+        //    }
+        //    catch (Exception error) {
+        //        return BadRequest(error); ;
+        //    }
+        //}
 
         [HttpGet]
         public IActionResult Get()
@@ -63,15 +65,14 @@ namespace XChallengeWebApi.Controllers
         }
 
         [HttpGet("GetById")]
-        public IActionResult GetById(Guid idAcesso, Guid idEvento)
+        public IActionResult GetById(int id)
         {
             try
             {
-               // return Ok(comentario.BuscarPorIdUsuario(idUsuario, idEvento));
+               return Ok(acesso.GetById(id));
             }
             catch (Exception)
             {
-
                 throw;
             }
         }

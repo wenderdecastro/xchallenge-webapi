@@ -7,7 +7,7 @@ using XChallengeWebApi.Utils;
 namespace XChallengeWebApi.Repositories
 {
     public class AcessoRepository : IAcessoRepository
-    {
+    { 
         private readonly XChallengeContext _context;
 
         public AcessoRepository() 
